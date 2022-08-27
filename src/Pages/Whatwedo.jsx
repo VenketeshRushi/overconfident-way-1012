@@ -53,7 +53,7 @@ function Whatwedo() {
           </Text>
         </Box>
       </Box>
-      <Container maxW={"53%"} mb={"60px"} mt={"90px"}>
+      <Container maxW={"56%"} mb={"60px"} mt={"90px"}>
         <Stack
           display="flex"
           alignItems={"center"}

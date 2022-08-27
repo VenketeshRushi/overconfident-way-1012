@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Box,
   Container,
@@ -27,23 +28,29 @@ function Navbar() {
           <Container className="maincontainer">
             <Box className="logo">
               <svg width="230px" height="50px">
-                <text
-                  fontSize="30"
-                  fontWeight={900}
-                  fontFamily="benton-sans,Helvetica,Sans-serif"
-                  x="0"
-                  y="35"
-                  fill="#e51075"
-                >
-                  INDIEGOGO
-                </text>
+                <Link to="/">
+                  <text
+                    fontSize="30"
+                    fontWeight={900}
+                    fontFamily="benton-sans,Helvetica,Sans-serif"
+                    x="0"
+                    y="35"
+                    fill="#e51075"
+                  >
+                    INDIEGOGO
+                  </text>
+                </Link>
               </svg>
             </Box>
             <Box>
               <Stack spacing="24px" width={600} direction={"row"}>
                 <p>Explore</p>
-                <p>Our Top 10 Finds</p>
-                <p>Team Favorite</p>
+                <Link to="/top-10">
+                  <p>Our Top 10 Finds</p>
+                </Link>
+                <Link to="/favorite">
+                  <p>Team Favorite</p>
+                </Link>
                 <button onClick={handlesearch}>
                   <Search2Icon mb="1"></Search2Icon>
                 </button>
@@ -53,8 +60,12 @@ function Navbar() {
           <Container className="maincontainer1">
             <Box>
               <Stack spacing={"24px"} direction={"row"}>
-                <p>Start a Campaign</p>
-                <p>What We Do</p>
+                <Link to="/campaign">
+                  <p>Start a Campaign</p>
+                </Link>
+                <Link to="/whatwedo">
+                  <p>What We Do</p>
+                </Link>
                 <p style={{ color: "#ddd" }}>|</p>
                 <Login />
                 <SignUp />
@@ -63,27 +74,6 @@ function Navbar() {
           </Container>
         </div>
       ) : (
-        // <Box
-        //   display={"flex"}
-        //   alignItems={"center"}
-        //   pb={1}
-        //   pt={1}
-        //   margin="auto"
-        //   width={"96%"}
-        // >
-        //   <Search2Icon mb={0.5}></Search2Icon>
-        //   <Stack width={"100%"} pl={3} pr={3} direction={"row"} spacing="1">
-        //     <Input border={"none"} borderColor={"transparent"} _focus={{borderColor: "transparent"}} size="sm" placeholder="Search"/>
-        //     <Button
-        //       size="sm"
-        //       bg='#e51075'
-        //       onClick={() => setok(!ok)}
-        //       _hover={{border:"2px solid twitter"}}
-        //     >
-        //       <CloseIcon></CloseIcon>
-        //     </Button>
-        //   </Stack>
-        // </Box>
         <Box
           display={"flex"}
           alignItems={"center"}
