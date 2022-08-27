@@ -1,0 +1,15 @@
+.btnpink{
+    font-size: 16px;
+    color: #e51075;
+    padding: 10px 0px;
+    border-radius: "2px";
+    border: 1px solid #e51075;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.btnpink:hover{
+    background-color: #e51075;
+    color: white;
+}
