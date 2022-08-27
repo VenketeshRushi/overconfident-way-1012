@@ -1,0 +1,69 @@
+.boxy {
+  background: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1658766588/eqiz3atyhohhduuwercg.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 416px;
+  color: white;
+}
+.boxy1 {
+  background: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1660843743/it25dnypbcnfyodgrk7i.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 416px;
+  color: white;
+}
+.boxy2 {
+  background: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1655332492/xmwmdtjfvyy2mbbre4qo.png");
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 416px;
+  color: white;
+}
+.boxy3 {
+  background: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/f_auto/v1659985896/hugs8qpmkxx1uvwalnz4.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 416px;
+  color: white;
+}
+.backp {
+  background: url("https://c4.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_auto,g_center,q_auto:best,dpr_2.0,f_auto/homepage/cf-bg-desktop-sm.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 416px;
+}
+.lastdiv{
+  display:"flex";
+  justify-content:"space-between";
+  width:260px;
+  margin:"auto";
+  margin-top: 2px;
+  background: url("https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg");
+  background-size: cover;
+  background-position: 50%;
+}

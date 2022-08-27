@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  height: 490px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.container>div:first-child{
+  overflow-y:hidden ;
+}
+.container > div > div:last-child {
+  display: none;
+}
+.showing {
+  position: relative;
+}
+.name {
+  position: absolute;
+  top: 58%;
+  left: 10%;
+  color: white;
+}
+.des {
+  position: absolute;
+  top: 64%;
+  left: 10%;
+  color: white;
+  font-weight: 100;
+}
+.info {
+  position: absolute;
+  top: 71.5%;
+  left: 10%;
+  color: white;
+  font-weight: 500;
+  font-size: small;
+}
+.info1 {
+  position: absolute;
+  top: 49.5%;
+  left: 10%;
+  color: white;
+  font-weight: 500;
+  font-size: smaller;
+  border: 1px solid;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container > div > div:nth-child(5) {
+  margin-top: 182px;
+  margin-left: 128px;
+  border-color: white;
+  border: 2px solid white;
+  opacity: 1;
+  background: transparent;
+}
+.container > div > div:nth-child(6) {
+  margin-top: 182px;
+  margin-right: 1233px;
+  border-color: white;
+  border: 2px solid white;
+  background: transparent;
+  opacity: 1;
+}
+.count {
+  position: absolute;
+  top: 83%;
+  left: 20%;
+  color: white;
+  font-weight: 500;
+  font-size: small;
+}
+.showing img {
+  width: 100%;
+  height: 500px;
+}

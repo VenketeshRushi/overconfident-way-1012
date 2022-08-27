@@ -1,0 +1,31 @@
+.containernav {
+  display: flex;
+  width: 100%;
+}
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: benton-sans, Helvetica, Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(42, 42, 42);
+  width: 50%;
+}
+.maincontainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 35%;
+  font-family: benton-sans, Helvetica, Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(42, 42, 42);
+}
+.logo {
+  margin-left: -100px;
+}
+.containernav p:hover {
+  color: #e51075;
+}
+

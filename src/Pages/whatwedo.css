@@ -1,0 +1,35 @@
+.containerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/hero_desktop.png);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 375px;
+  margin-bottom: 60px;
+}
+.explorebutton{
+    background-color: transparent;
+    font-Size: 15px;
+    color: #e51075;
+    padding: 13px 20px;
+    border-Radius: 2px;
+    border: 3px solid #e51075;
+    width: max-content;
+    margin: auto;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.explorebutton:hover{
+    background-color: #e51075;
+    color: white;
+}
+.learnmore{
+    font-size: 20px;
+    margin-top: -23px;
+}
+.main{
+    max-width: 100%;
+}
