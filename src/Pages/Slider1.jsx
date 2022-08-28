@@ -45,11 +45,13 @@ function Slider1() {
                 key={i}
                 alt="gsds"
               />
+              <div className="showing-info">
               <p className="info1">{item.info1}</p>
               <h5 className="name">{item.name}</h5>
               <p className="des">{item.des}</p>
               <p className="info">{item.info}</p>
               <p className="count">{`${i} / 4`}</p>
+              </div>
             </div>
           ))}
         </Carousel>

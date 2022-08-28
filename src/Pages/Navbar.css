@@ -1,6 +1,7 @@
 .containernav {
   display: flex;
-  width: 100%;
+  align-items: center;
+  max-width: 100%;
 }
 .maincontainer {
   display: flex;
@@ -28,4 +29,25 @@
 .containernav p:hover {
   color: #e51075;
 }
-
+.desnav {
+  width:100%
+}
+.mobilenav {
+  width: 100%;
+}
+@media all and (min-width: 780px) and (max-width: 3000px) {
+  .mobilenav {
+    display: none;
+  }
+  .desnav {
+    display: block;
+  }
+}
+@media all and (min-width: 250px) and (max-width: 780px) {
+  .mobilenav {
+    display: block;
+  }
+  .desnav {
+    display: none;
+  }
+}

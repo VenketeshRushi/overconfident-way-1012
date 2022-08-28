@@ -17,6 +17,45 @@
   padding: 10px 0px;
   transition: all 0.5s cubic-bezier(0.16, 0.8, 0.45, 1);
 }
+.slider2Container1 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, #00000038 0px 10px 10px;
+  width: 23%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 400;
+  padding: 10px 0px;
+  transition: all 0.5s cubic-bezier(0.16, 0.8, 0.45, 1);
+}
+.slider2Container2 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, #00000038 0px 10px 10px;
+  width: 23%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 400;
+  padding: 10px 0px;
+  transition: all 0.5s cubic-bezier(0.16, 0.8, 0.45, 1);
+}
+.slider2Container3 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, #00000038 0px 10px 10px;
+  width: 23%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: 400;
+  padding: 10px 0px;
+  transition: all 0.5s cubic-bezier(0.16, 0.8, 0.45, 1);
+}
 .pricedes {
   display: flex;
   width: 88%;
@@ -134,4 +173,44 @@
   margin: auto;
   text-align: left;
   margin-top: 10px;
+}
+@media all and (max-width: 480px) and (min-width: 320px) {
+  .slider2Container1,
+  .slider2Container2,
+  .slider2Container3 {
+    display: none;
+  }
+  .slider2Container {
+    width: max-content;
+  }
+  .prenex1,
+  .prenex2 {
+    top: 55%;
+  }
+  .prenex1 {
+    left: -10%;
+  }
+  .prenex2 {
+    right: -10%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  .slider2Container2,
+  .slider2Container3 {
+    display: none;
+  }
+  .slider2Container,
+  .slider2Container1 {
+    width: 45%;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 720px) {
+  .slider2Container3 {
+    display: none;
+  }
+  .slider2Container,
+  .slider2Container1,
+  .slider2Container2 {
+    width: 30%;
+  }
 }

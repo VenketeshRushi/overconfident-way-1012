@@ -203,7 +203,7 @@ function Slider2() {
             </div>
           </div>
         </div>
-        <div className="slider2Container">
+        <div className="slider2Container1">
           <img className="avatar" src={data1[count1]?.img1} alt="" />
           <div className="featuring">
             <h4>FEATURED</h4>
@@ -253,7 +253,7 @@ function Slider2() {
             </div>
           </div>
         </div>
-        <div className="slider2Container">
+        <div className="slider2Container2">
           <img className="avatar" src={data1[count2]?.img1} alt="" />
           <div className="featuring">
             <h4>FEATURED</h4>
@@ -305,7 +305,7 @@ function Slider2() {
             </div>
           </div>
         </div>
-        <div className="slider2Container">
+        <div className="slider2Container3">
           <img className="avatar" src={data1[count3]?.img1} alt="" />
           <div className="featuring">
             <h4>FEATURED</h4>
