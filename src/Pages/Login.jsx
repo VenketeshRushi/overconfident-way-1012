@@ -16,17 +16,72 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import axios from "axios";
+import { useState } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../components/context";
 function Login() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  //const { isOpen, onOpen, onClose } = useDisclosure();
+  const { state, dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
+  const onCloseLogin = () => {
+    dispatch({ type: "closelogin" });
+    console.log(state);
+  };
+  const initaldatalogin = {
+    email: "",
+    password: "",
+  };
+  const [datalogin, setdatalogin] = useState(initaldatalogin);
+  const [data, setdata] = useState([]);
+  const fetchuserdata = () => {
+    axios("http://localhost:8080/signup").then((res) => setdata(res.data));
+  };
+  
+  //console.log(datalogin);
+
+  const handleInput = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setdatalogin({ ...datalogin, [name]: value });
+  };
+
+  const handlelogin = () => {
+    fetchuserdata();
+    //console.log(data);
+    data?.filter((ele) => {
+      if (
+        ele.email === datalogin.email &&
+        ele.password === datalogin.password
+      ) {
+        console.log("logged in")
+        dispatch({ type: "closelogin" })
+        dispatch({type:"closemobilenav"})
+        dispatch({type:"loginsucceed"})
+        return navigate("/");
+      }
+    });
+  };
+
   return (
     <>
-      <p style={{ cursor: "pointer" }} onClick={onOpen}>
+      <p
+        style={{ cursor: "pointer" }}
+        onClick={() =>
+          dispatch({
+            type: "openlogin",
+          })
+        }
+      >
         Login
       </p>
 
-      <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+      <Modal
+        blockScrollOnMount={false}
+        isOpen={state.isOpenNowLogin}
+        onClose={onCloseLogin}
+      >
         <ModalOverlay />
         <ModalContent padding={"0px 30px"} width={450} borderRadius={"0"}>
           <ModalHeader>
@@ -55,6 +110,9 @@ function Login() {
                   type={"email"}
                   size="md"
                   _focus={{ borderColor: "#2a2a2a" }}
+                  name="email"
+                  value={datalogin.email}
+                  onChange={handleInput}
                 />
               </Box>
               <Box>
@@ -67,6 +125,9 @@ function Login() {
                   size="md"
                   type={"password"}
                   _focus={{ borderColor: "#2a2a2a" }}
+                  name="password"
+                  value={datalogin.password}
+                  onChange={handleInput}
                 />
               </Box>
             </Stack>
@@ -98,7 +159,7 @@ function Login() {
                   width: "100%",
                   marginTop: "15px",
                 }}
-                onClick={() => navigate("/")}
+                onClick={handlelogin}
               >
                 LOGIN
               </button>

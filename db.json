@@ -1,0 +1,41 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "1234"
+    },
+    {
+      "firstName": "raman",
+      "lastName": "rushi",
+      "email": "rushivenketesh@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "firstName": "Rushikesh",
+      "lastName": "Tupkar",
+      "email": "rushikeshtupkar2057@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "firstName": "Rushikesh",
+      "lastName": "Tupkar",
+      "email": "rushikeshtupkar2057@gmail.com",
+      "password": "12345",
+      "id": 4
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "1234"
+    }
+  ]
+}

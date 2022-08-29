@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -31,19 +31,39 @@ import "./Navbar.css";
 import { useRef, useState } from "react";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import { useContext } from "react";
+import { AuthContext } from "../components/context";
 
 function Navbar() {
+  const navigate = useNavigate();
   const [ok, setok] = useState(true);
   const handlesearch = () => {
     setok(!ok);
   };
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
+  const { state, dispatch } = useContext(AuthContext);
+
+  const onClose = () => {
+    dispatch({ type: "closemobilenav" });
+  };
+
+  const handlelogout = () => {
+    console.log("logged out");
+    dispatch({ type: "logoutsucceed" });
+    dispatch({ type: "closemobilenav" });
+    navigate("/");
+  };
   return (
     <>
       <Box className="mobilenav">
-        <Stack display={"flex"} alignItems="center" justifyContent="center" flexDirection="row">
-          <Box >
+        <Stack
+          display={"flex"}
+          alignItems="center"
+          justifyContent="center"
+          flexDirection="row"
+        >
+          <Box>
             <svg width="230px" height="50px">
               <Link to="/">
                 <text
@@ -64,7 +84,7 @@ function Navbar() {
             color="black"
             ref={btnRef}
             colorScheme="teal"
-            onClick={onOpen}
+            onClick={() => dispatch({ type: "openmobilenav" })}
             width="max-content"
             height="max-content"
           >
@@ -72,7 +92,7 @@ function Navbar() {
           </Button>
         </Stack>
         <Drawer
-          isOpen={isOpen}
+          isOpen={state.isOpenNowmobnav}
           placement="right"
           onClose={onClose}
           finalFocusRef={btnRef}
@@ -99,9 +119,15 @@ function Navbar() {
               <hr style={{ marginBottom: "10px" }} />
               <Text>Start a Campaign</Text>
               <hr style={{ marginBottom: "10px" }} />
-              <Login />
-              <hr style={{ marginBottom: "10px" }} />
-              <SignUp />
+              {!state.isAuth ? (
+                <Box>
+                  <Login />
+                  <hr style={{ marginBottom: "10px" }} />
+                  <SignUp />
+                </Box>
+              ) : (
+                <Button onClick={handlelogout}>Logout</Button>
+              )}
               <hr style={{ marginBottom: "10px" }} />
             </DrawerBody>
 
@@ -159,8 +185,14 @@ function Navbar() {
                     <p>What We Do</p>
                   </Link>
                   <p style={{ color: "#ddd" }}>|</p>
-                  <Login />
-                  <SignUp />
+                  {!state.isAuth ? (
+                    <Stack direction="row" spacing={5}>
+                      <Login />
+                      <SignUp />
+                    </Stack>
+                  ) : (
+                    <p onClick={handlelogout}>Logout</p>
+                  )}
                 </Stack>
               </Box>
             </Container>
