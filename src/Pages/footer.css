@@ -10,7 +10,8 @@
 .container1 {
   max-width: 100%;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin: auto;
 }
 .container2 {
   display: flex;

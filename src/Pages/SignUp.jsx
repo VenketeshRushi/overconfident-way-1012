@@ -16,8 +16,10 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import {useNavigate} from "react-router-dom";
 function SignUp() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate=useNavigate();
   return (
     <>
       <p style={{cursor: "pointer"}} onClick={onOpen}>Sign Up</p>
@@ -111,6 +113,7 @@ function SignUp() {
                   width: "100%",
                   marginTop: "15px",
                 }}
+                onClick={()=>navigate("/")}
               >
                 CREATE ACCOUNT
               </button>
@@ -145,7 +148,7 @@ function SignUp() {
                 textAlign={"center"}
                 textDecoration={"underline"}
               >
-                Log In
+                Login
               </Text>
             </Stack>
           </ModalBody>
