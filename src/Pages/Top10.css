@@ -1,15 +1,54 @@
-.btnpink{
-    font-size: 16px;
-    color: #e51075;
-    padding: 10px 0px;
-    border-radius: "2px";
-    border: 1px solid #e51075;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
+.btnpink {
+  font-size: 16px;
+  color: #e51075;
+  padding: 10px 0px;
+  border-radius: "2px";
+  border: 1px solid #e51075;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
 }
-.btnpink:hover{
-    background-color: #e51075;
-    color: white;
+.btnpink:hover {
+  background-color: #e51075;
+  color: white;
+}
+.btnfacebook {
+  font-size: 16px;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 2px;
+  border: 1px solid rgb(64, 93, 157);
+  font-weight: 600;
+  width: 25%;
+  background-color: rgb(64, 93, 157);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btntwitter {
+  font-size: 16px;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 2px;
+  border: 1px solid rgb(44, 153, 215);
+  font-weight: 600;
+  width: 25%;
+  background-color: rgb(44, 153, 215);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media all and (min-width: 250px) and (max-width: 620px) {
+  .btnfacebook {
+    width: 50%;
+  }
+  .btntwitter {
+    display: none;
+  }
+  .btnpink {
+    width: 50%;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 3000px) {
 }

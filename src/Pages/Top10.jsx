@@ -35,7 +35,7 @@ function Top10() {
         }}
       />
       <Container maxWidth="100%">
-        <Box m={"auto"} width={"55%"}>
+        <Box m={"auto"} width={["95%", "85%", "70%", "55%"]}>
           <Heading mb={3}>10 Cool & Clever Finds</Heading>
           <Text>
             Discover your next "a-ha" moment in our roundup of standout
@@ -49,39 +49,11 @@ function Top10() {
             direction={"row"}
             mt={3}
           >
-            <button
-              style={{
-                fontSize: "16px",
-                color: "white",
-                padding: "10px 0px",
-                borderRadius: "2px",
-                border: "1px solid rgb(64,93,157)",
-                fontWeight: "600",
-                width: "25%",
-                backgroundColor: "rgb(64,93,157)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <button className="btnfacebook">
               <Icon mr={3} as={AiOutlineFacebook} w={"25px"} h={"25px"} />
               Follow
             </button>
-            <button
-              style={{
-                fontSize: "16px",
-                color: "white",
-                padding: "10px 0px",
-                borderRadius: "2px",
-                border: "1px solid rgb(44,153,215)",
-                fontWeight: "600",
-                width: "25%",
-                backgroundColor: "rgb(44,153,215)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <button className="btntwitter">
               <Icon mr={3} as={AiOutlineTwitter} w={"25px"} h={"25px"} />
               Follow
             </button>

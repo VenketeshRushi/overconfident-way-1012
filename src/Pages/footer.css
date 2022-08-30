@@ -12,6 +12,9 @@
   margin-top: 50px;
   margin-bottom: 40px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .container2 {
   display: flex;

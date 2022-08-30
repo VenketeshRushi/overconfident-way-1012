@@ -19,11 +19,13 @@ import Navbar from "./Navbar";
 function Whatwedo() {
   return (
     <div className="main">
-        <Navbar/>
+      <Navbar />
       <Box className="containerbox">
         <Box mr={"20%"} w={"60%"}>
-          <Heading mb={2}>Get the tech that gets people talking</Heading>
-          <Text>
+          <Heading fontSize={["sm", "md", "xl", "3xl"]} mb={2}>
+            Get the tech that gets people talking
+          </Heading>
+          <Text fontSize={["10px", "12px", "14px", "16px"]}>
             With both live crowdfunding campaigns and innovative products
             shipping now, there’s no better place to start the hunt for cool and
             clever innovations that surprise and delight. Indiegogo is where new
@@ -31,7 +33,7 @@ function Whatwedo() {
           </Text>
         </Box>
       </Box>
-      <Box width={"50%"} margin={"auto"}>
+      <Box width={["95%", "80%", "65%", "50%"]} margin={"auto"}>
         <AspectRatio maxW="780px" maxH={"450px"} ratio={1}>
           <iframe
             title="indiegogo"
@@ -40,10 +42,14 @@ function Whatwedo() {
           />
         </AspectRatio>
         <Box mt={5}>
-          <Heading mb={4} fontWeight={"500"}>
+          <Heading
+            mb={4}
+            fontSize={["lg", "xl", "2xl", "3xl"]}
+            fontWeight={"500"}
+          >
             Fund the next big thing
           </Heading>
-          <Text fontSize="17px">
+          <Text fontSize={["11px", "13px", "15px", "17px"]}>
             Indiegogo's crowdfunding campaigns are where new and groundbreaking
             products take flight, sometimes long before they hit mainstream
             availability. With thousands of campaigns launching every week,
@@ -53,14 +59,19 @@ function Whatwedo() {
           </Text>
         </Box>
       </Box>
-      <Container maxW={"56%"} mb={"60px"} mt={"90px"}>
+      <Container maxW={["95%", "80%", "70%", "56%"]} mb={"60px"} mt={"90px"}>
         <Stack
           display="flex"
           alignItems={"center"}
           justifyContent={"center"}
           spacing={5}
         >
-          <Heading fontSize="39px" w={"89%"} mb={4} fontWeight={"500"}>
+          <Heading
+            fontSize={["lg", "xl", "2xl", "3xl"]}
+            w={"89%"}
+            mb={4}
+            fontWeight={"500"}
+          >
             Join the journey from idea to market
           </Heading>
           <Box
@@ -71,18 +82,18 @@ function Whatwedo() {
             margin="auto"
           >
             <Image
-              w={"68%"}
+              w={["98%", "88%", "78%", "68%"]}
               src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/v1/what_we_do/timeline_desktop_2x.png"
             />
           </Box>
-          <Text fontSize="17px">
+          <Text fontSize={["11px", "13px", "15px", "17px"]}>
             With Indiegogo, you have the opportunity to support entrepreneurs
             and new technology from the earliest stages of development. Be sure
             to evaluate every campaign closely and contribute at a level you can
             afford in the event that the team is unable to complete the project
             as planned.
           </Text>
-          <Text fontSize="17px">
+          <Text fontSize={["11px", "13px", "15px", "17px"]}>
             Browse campaigns, read the stories from the entrepreneurs
             themselves, evaluate the stage of development and any potential
             production risks — and then fund the projects that you want to help
@@ -95,7 +106,12 @@ function Whatwedo() {
           crowdfunding and your role as a backer.
         </h5>
       </Container>
-      <Box margin="auto" mt={"80px"} mb={"100px"} maxW={"53%"}>
+      <Box
+        margin="auto"
+        mt={"80px"}
+        mb={"100px"}
+        maxW={["95%", "80%", "65%", "53%"]}
+      >
         <Stack display="flex" alignItems={"center"} justifyContent={"center"}>
           <Heading fontSize={"3xl"} fontWeight="600">
             Great finds, delivered daily
@@ -137,12 +153,12 @@ function Whatwedo() {
           </Checkbox>
         </Stack>
       </Box>
-      <Container maxW={"78%"}>
-        <Stack direction={"row"} spacing={10}>
-          <Box>
+      <Container maxW={["100%", "80%", "78%"]}>
+        <Box display={"flex"} alignItems="center" justifyContent={"center"}>
+          <Box w={["0%", "0%", "85%"]}>
             <Image src="https://g2.iggcdn.com/assets/site/what_we_do/perk_illustration-ce8d9a9254775fc64731193189a22299d2db1e7ce8c4d82952ffe23adcdec1a8.png" />
           </Box>
-          <Box textAlign={"left"} w={"85%"}>
+          <Box textAlign={"left"} w={["100%", "95%", "85%"]}>
             <Stack>
               <Heading>What is a perk?</Heading>
               <Text fontSize={"17px"}>
@@ -189,7 +205,7 @@ function Whatwedo() {
               </Text>
             </Stack>
           </Box>
-        </Stack>
+        </Box>
       </Container>
       <Container margin="auto" mt={10} maxW={"85%"}>
         <Stack
@@ -199,7 +215,7 @@ function Whatwedo() {
         >
           <SimpleGrid
             rowGap={20}
-            width={"60%"}
+            width={["95%", "80%", "60%"]}
             columns={[1, 1, 2]}
             spacing="30px"
           >
@@ -281,7 +297,11 @@ function Whatwedo() {
               </Text>
             </Box>
           </SimpleGrid>
-          <Box position={"relative"} bg="rgb(214,244,234)" width={"32%"}>
+          <Box
+            position={"relative"}
+            bg="rgb(214,244,234)"
+            width={["0%", "0%", "0%", "32%"]}
+          >
             <Image
               position={"absolute"}
               left="39px"
@@ -295,7 +315,7 @@ function Whatwedo() {
         </Stack>
       </Container>
       <Box
-        width={"60%"}
+        width={["95%", "78%", "60%"]}
         margin="auto"
         display="flex"
         alignItems={"center"}
@@ -307,11 +327,18 @@ function Whatwedo() {
           display="flex"
           alignItems={"center"}
           justifyContent="center"
-          mr={10}
+          mr={5}
           spacing="5"
         >
-          <Icon as={RiMotorbikeFill} w={"70px"} h={"70px"} color="#e51075" />
-          <Heading>Ready? Explore</Heading>
+          <Icon
+            as={RiMotorbikeFill}
+            w={["30px", "50px", "70px"]}
+            h={["30px", "50px", "70px"]}
+            color="#e51075"
+          />
+          <Heading fontSize={["md", "xl", "2xl", "3xl"]}>
+            Ready? Explore
+          </Heading>
           <button
             style={{
               fontSize: "16px",
@@ -323,18 +350,27 @@ function Whatwedo() {
               width: "80%",
             }}
           >
-            DISCOVER PROJECTS
+            <Text fontSize={["11px", "13px", "15px", "17px"]}>
+              DISCOVER PROJECTS
+            </Text>
           </button>
         </Stack>
         <Stack
           display="flex"
           alignItems={"center"}
           justifyContent="center"
-          ml={10}
-          spacing="5"
+          ml={5}
+          spacing={"5"}
         >
-          <Icon as={GiInspiration} w={"70px"} h={"70px"} color="#e51075" />
-          <Heading>Feeling Inspired?</Heading>
+          <Icon
+            as={GiInspiration}
+            w={["35px", "50px", "70px"]}
+            h={["35px", "50px", "70px"]}
+            color="#e51075"
+          />
+          <Heading fontSize={["md", "xl", "2xl", "3xl"]}>
+            Feeling Inspired?
+          </Heading>
           <button
             style={{
               fontSize: "16px",
@@ -346,11 +382,13 @@ function Whatwedo() {
               width: "80%",
             }}
           >
-            BECOME AN ENTREPRENEUR
+            <Text fontSize={["8px", "10px", "12px", "14px"]}>
+              BECOME AN ENTREPRENEUR
+            </Text>
           </button>
         </Stack>
       </Box>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

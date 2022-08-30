@@ -15,7 +15,7 @@ function Campaign() {
     <>
       <Navbar />
       <Container
-        maxWidth={"55%"}
+        maxWidth={["95%","85%","70%","55%"]}
         display={"flex"}
         alignItems="center"
         justifyContent={"center"}
@@ -26,7 +26,7 @@ function Campaign() {
             <Image
               m={"auto"}
               height={"220px"}
-              width={"45%"}
+              width={["95%","75%","60%","45%"]}
               src="https://c2.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg"
             />
             <Heading pb={"10px"} fontSize="35px" fontWeight="500">
@@ -68,7 +68,7 @@ function Campaign() {
                 <h2>
                   <AccordionButton border={"1px"}>
                     <Box flex="1" textAlign="left">
-                      Section 1 title
+                      Select Country
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -106,7 +106,7 @@ function Campaign() {
                 <h2>
                   <AccordionButton border={"1px"}>
                     <Box flex="1" textAlign="left">
-                      Section 1 title
+                      Select Your Bank
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -124,7 +124,7 @@ function Campaign() {
               </AccordionItem>
             </Accordion>
           </Box>
-          <Box>
+          <Box >
             <button
               style={{
                 backgroundColor: "#e51075",
@@ -134,7 +134,6 @@ function Campaign() {
                 borderRadius: "2px",
                 border: "1px solid #e51075",
                 fontWeight: "600",
-                width: "30%",
               }}
             >
               START MY CAMPAINGN

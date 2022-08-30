@@ -32,6 +32,7 @@ function reducer(state, action) {
     }
     case "closelogin": {
       return {
+        
         ...state,
         isOpenNowLogin: false,
       };

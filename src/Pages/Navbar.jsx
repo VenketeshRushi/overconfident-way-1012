@@ -60,7 +60,7 @@ function Navbar() {
         <Stack
           display={"flex"}
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-around"
           flexDirection="row"
         >
           <Box>
@@ -109,15 +109,23 @@ function Navbar() {
             <DrawerHeader>MENU</DrawerHeader>
 
             <DrawerBody>
-              <Text>Home</Text>
+              <Link to="/"><Text onClick={()=>dispatch({type:"closemobilenav"})}>Home</Text></Link>
               <hr style={{ marginBottom: "10px" }} />
-              <Text>Explore</Text>
+              <Link to="/top-10">
+                <Text onClick={()=>dispatch({type:"closemobilenav"})}>Explore</Text>
+              </Link>
               <hr style={{ marginBottom: "10px" }} />
-              <Text>What We Do</Text>
+              <Link to="/whatwedo">
+                <Text onClick={()=>dispatch({type:"closemobilenav"})}>What We Do</Text>
+              </Link>
               <hr style={{ marginBottom: "10px" }} />
-              <Text>For Entrepreneurs</Text>
+              <Link to="/top-10">
+                <Text onClick={()=>dispatch({type:"closemobilenav"})}>For Entrepreneurs</Text>
+              </Link>
               <hr style={{ marginBottom: "10px" }} />
-              <Text>Start a Campaign</Text>
+              <Link to="/campaign">
+                <Text onClick={()=>dispatch({type:"closemobilenav"})}>Start a Campaign</Text>
+              </Link>
               <hr style={{ marginBottom: "10px" }} />
               {!state.isAuth ? (
                 <Box>
@@ -162,13 +170,11 @@ function Navbar() {
               </Box>
               <Box>
                 <Stack spacing="24px" width={600} direction={"row"}>
-                  <p>Explore</p>
+                  <Link to="/top-10"><p>Explore</p></Link>
                   <Link to="/top-10">
                     <p>Our Top 10 Finds</p>
                   </Link>
-                  <Link to="/favorite">
-                    <p>Team Favorite</p>
-                  </Link>
+                  <Link to="/whatwedo"><p>Team Favorite</p></Link>
                   <button onClick={handlesearch}>
                     <Search2Icon mb="1"></Search2Icon>
                   </button>
